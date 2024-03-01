@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/DES 18/estilos.css">
+    <title>Mi Lista de Películas</title>
+</head>
+<body>
+    
+<header>
+
+    <div class="containerImg">
+        <img src="/DES 18/images/INCAA.jpg" alt="">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#movie-list">Lista de Películas</a></li>
+            <li><a href="#agregarPelicula">Agregar Película</a></li>
+        </ul>
+        
+    </nav>
+   
+</header>
+<h1>CINE ARGENTINO PARA EL MUNDO</h1>
+
+    <section class="container-section" id="container-section">
+       <div class="section-buscar">
+           <input type="text"  id="searchInput" placeholder="Buscar por título">
+           <button id="searchButton">Buscar</button>
+
+           <select id="yearFilter">
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+        </select>
+        <button id="buttonYear">Buscar</button>
+       </div> 
+    </section>
+
+    <main id="movie-list"> </main>
+
+    <h1 id="agregarPelicula" style="margin-bottom: 1rem;">Agregar Nueva Película</h1>
+
+
+    <h2></h2>
+    <section class="formMovie" >
+        <form id="formMovie">
+            <label for="title">Título:</label>
+            <input type="text" id="title" placeholder="Ingrese el título" required>
+
+            <input type="text" id="imgSrcInput" placeholder="URL de la imagen" required>
+
+            <label for="description">Descripción:</label>
+            <textarea id="description" placeholder="Ingrese la descripción" required></textarea>
+
+            <label for="year">Año de lanzamiento:</label>
+            <input type="number" id="year" placeholder="Ingrese el año" required>
+
+            <button type="submit">Agregar Película</button>
+        </form>
+
+    </section>
+
+ 
+
+
+<script src="/DES 18/index.js"></script>
+</body>
+</html>
+</div>
